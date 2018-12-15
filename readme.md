@@ -45,5 +45,5 @@ Commands:
 
 ## Built With
 
-* [Click](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [psutil](https://maven.apache.org/) - Dependency Management
+* [Click](https://click.palletsprojects.com/en/7.x/) - A package for creating command line interfaces
+* [psutil](https://psutil.readthedocs.io/en/latest/) - A library for retrieving system stats and process information
