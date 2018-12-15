@@ -1,41 +1,27 @@
-# Quickstas
+# Quickstats
 
-An example project to get started creating and testing a Click CLI. 
+An example project to get started creating and testing a Click CLI. A detailed explanation is available at [A Whole Stack](https://awholestack.com/posts/building-a-python-cli/).
 
 ## Getting Started
 
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+To perform an editable install within a virtual enviroment:
 
 ```
-Give the example
+python -m venv env
+source env/bin/activate
+git clone https://github.com/awholestack/quick-stats.git
+pip install -r requirements.txt
+pip install --editable .
 ```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
-
-
-
+```
+pip install pytest
+pytest
+```
 
 ## Deployment
 
@@ -44,12 +30,20 @@ python setup.py sdist
 pip install dist/quickstats-0.1.tar.gz
 ```
 
+## Usage
+
+```bash
+$ quickstats
+Usage: quickstats [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  memory  Show memory stats
+```
+
 ## Built With
 
 * [Click](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
 * [psutil](https://maven.apache.org/) - Dependency Management
-
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
